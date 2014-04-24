@@ -5,12 +5,11 @@ class PrimeFactor:
 
     def prime_factors(self, num):
         result = []
-        while num > 3 and num % 2 == 0:
-            num = num // 2
-            result.append(num)
-        if num == 1:
-            return result
-        else:
-            result = [num]
+        divisor = 2
+        while num > 1:
+            while num % divisor == 0:
+                result.append(divisor)
+                num //= divisor
+            divisor += 1
         return result
 
