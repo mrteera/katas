@@ -21,3 +21,8 @@ class TestPrimeFactors(unittest.TestCase):
         actual = self.prime_factors.put(4)
         expected = [2,2]
         self.assertEqual(expected, actual)
+
+    def test_15_should_reutrn_list_of_3_5(self):
+        actual = self.prime_factors.put(15)
+        expected = [3,5]
+        self.assertEqual(expected, actual)
