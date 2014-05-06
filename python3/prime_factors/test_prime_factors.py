@@ -9,3 +9,9 @@ class TestPrimeFactors(unittest.TestCase):
         actual = self.prime_factors.put(1)
         expected = []
         self.assertEqual(expected, actual)
+
+    def test_2_should_return_list_of_2(self):
+        self.prime_factors = PrimeFactors()
+        actual = self.prime_factors.put(2)
+        expected = [2]
+        self.assertEqual(expected, actual)
