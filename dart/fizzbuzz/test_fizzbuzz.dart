@@ -1,6 +1,9 @@
 import 'package:unittest/unittest.dart';
 import 'fizzbuzz.dart';
 
-void main() {
-  
+main() {
+ test('one should return one', () {
+  var fizzbuzz = new FizzBuzz();
+  expect(fizzbuzz.get(), 1);
+  });
 }
