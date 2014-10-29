@@ -4,7 +4,10 @@ class FizzBuzz {
   int num;
 
   int get() {
-    return num;
+    if (num < 3) {
+      return num;
+    }
+    return "fizz";
   }
 
   set(int n) => num = n;
