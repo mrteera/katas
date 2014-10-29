@@ -1,14 +1,11 @@
 library fizzbuzz;
 
 class FizzBuzz {
-
   int num;
 
   int get() {
-    return this.num;
+    return num;
   }
 
-  set_num(int num) {
-   this.num = num;
-  }
+  set(int n) => num = n;
 }
