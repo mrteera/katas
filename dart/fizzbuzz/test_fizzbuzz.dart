@@ -18,4 +18,9 @@ main() {
     fizzbuzz.set(3);
     expect(fizzbuzz.get(), "fizz");
   });
+
+  test('five should return buzz', () {
+    fizzbuzz.set(5);
+    expect(fizzbuzz.get(), "buzz");
+  });
 }
