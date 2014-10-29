@@ -5,9 +5,7 @@ class FizzBuzz {
   String output = '';
 
   int get() {
-    if (num % 3 == 0) {
-      output = output + 'fizz';
-    }
+    if (num % 3 == 0) output = output + 'fizz';
     if (num % 5 == 0) {
       output = output + 'buzz';
     } else if (num % 3 != 0) {
