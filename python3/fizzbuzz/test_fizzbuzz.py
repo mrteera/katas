@@ -36,3 +36,6 @@ class testFizzBuzz(unittest.TestCase):
         expected = 'fizzbuzz'
         actual = self.fizzbuzz.get()
         self.assertEqual(expected, actual)
+
+if __name__ == '__main__':
+    unittest.main()
