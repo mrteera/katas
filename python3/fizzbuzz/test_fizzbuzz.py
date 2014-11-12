@@ -33,7 +33,7 @@ class testFizzBuzz(unittest.TestCase):
 
     def test_fifteen_should_return_fizzbuzz(self):
         self.fizzbuzz.set_num(15)
-        expected = 'fizzbuzz'
+        expected = 'fizzbuzzz'
         actual = self.fizzbuzz.get()
         self.assertEqual(expected, actual)
 
