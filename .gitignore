@@ -85,3 +85,5 @@ pubspec.lock
 *.exe
 *.out
 *.app
+
+.sconsign.dblite
