@@ -5,10 +5,14 @@ using namespace std;
 
 
 int Trik( string cipher ) {
-    if ( cipher == "A" )
-        return 2;
-    else
-        return 3;
+    int ball_position = 1;
+    int index;
+    
+    for ( index = 0; index < cipher.length(); index++ ) {
+        ball_position++;
+    }
+
+    return ball_position;
 }
 
 
