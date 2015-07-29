@@ -1,8 +1,14 @@
-#include <iostream>
+#include "trik.h"
 
-using namespace std;
+Trik::Trik()
+{
+}
 
-int main() {
-    cout << "Hello, World!" << endl;
+Trik::~Trik()
+{
+}
+
+int Trik::BallPosition(std::string cipher)
+{
     return 0;
 }

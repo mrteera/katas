@@ -1,10 +1,25 @@
+#include "trik.h"
+
 #include "CppUTest/TestHarness.h"
 
-TEST_GROUP(FirstTestGroup)
+TEST_GROUP(Trik)
 {
+    Trik* trik;
+
+    void setup()
+    {
+        trik = new Trik();
+    }
+
+    void teardown()
+    {
+        delete trik;
+    }
 };
 
-TEST(FirstTestGroup, FirstTest)
+TEST(Trik, test_input_AB_should_return_3)
 {
-       FAIL("Fail me!");
+    int expected = 0;
+    actual = trik.BallPosition("AAA");
+    CHECK_EQUAL(expected, actual)
 }
