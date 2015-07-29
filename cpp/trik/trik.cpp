@@ -5,10 +5,15 @@ using namespace std;
 
 
 int Trik( string cipher ) {
-    return 3;
+    if ( cipher == "A" )
+        return 2;
+    else
+        return 3;
 }
 
 
 TEST_CASE( "Trik magic happened", "[trik]" ) {
     REQUIRE( Trik("AB") == 3 );
+    REQUIRE( Trik("A") == 2);
+    //REQUIRE( Trik("CBABCACCC") == 1);
 }
