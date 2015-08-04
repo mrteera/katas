@@ -2,7 +2,6 @@
 #define CATCH_CONFIG_MAIN
 #include "../catch.hpp"
 #include <string>
-#include <list>
 #include <iostream>
 using namespace std;
 
