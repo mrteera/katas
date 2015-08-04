@@ -5,6 +5,12 @@
 #include <iostream>
 using namespace std;
 
+/*
+ * TODO:
+ * - Refactor to use switch case
+ * - Use class
+*/
+
 
 int Trik( string cipher ) {
     int ball_position_1 = 1;
